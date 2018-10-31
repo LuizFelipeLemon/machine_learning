@@ -5,6 +5,7 @@ function Board(width = 720, height = 400, w = 40) {
     this.w = w
     this.points = new Array();
     this.board = new Array(this.columns);
+    this.destination = p5.Vector.random2D()
     for (var i = 0; i < this.columns; i++) {
         this.board[i] = new Array(this.rows);
     }
@@ -24,18 +25,20 @@ function Board(width = 720, height = 400, w = 40) {
         }
     }
 
-
-
 }
 
-Board.prototype.draw = function () {
+Board.prototype.show = function () {
 
     background(255);
     //generate();
+    //console.log('entrei')
     for (var i = 0; i < this.columns; i++) {
         for (var j = 0; j < this.rows; j++) {
+            //console.log(this.board[i][j])
             if ((this.board[i][j] == 1)) fill(0);
-            else fill(255);
+            else if ((this.board[i][j] == 0)) fill(255);
+            else fill(255, 0, 0);
+
             stroke(0);
             rect(i * this.w, j * this.w, this.w - 1, this.w - 1);
         }
@@ -55,5 +58,12 @@ Board.prototype.addPoint = function () {
             this.board[i][this.points[x].y] = 1
         }
     }
+
+}
+
+Board.prototype.addDest = function () {
+    console.log("************************")
+    this.destination = createVector(floor(mouseX / this.w), floor(mouseY / this.w))
+    this.board[this.destination.x][this.destination.y] = 2
 
 }

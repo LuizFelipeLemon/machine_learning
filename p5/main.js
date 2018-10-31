@@ -1,5 +1,7 @@
 
 var b;
+var addPoint = false;
+var addDest = false;
 
 function setup() {
     createCanvas(1280, 640);
@@ -9,10 +11,24 @@ function setup() {
 
 function draw() {
 
-    b.draw()
+    b.show()
 }
 
 function mousePressed() {
-    b.addPoint();
+    if (addPoint) {
+        b.addPoint();
+    }
+    if (addDest) {
+        b.addDest();
+    }
 
+}
+
+function keyPressed() {
+    console.log(keyCode)
+    if (keyCode === 65) {
+        addPoint = !addPoint
+    } else if (keyCode === 68) {
+        addDest = !addDest;
+    }
 }
