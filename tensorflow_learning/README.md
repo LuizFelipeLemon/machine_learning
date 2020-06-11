@@ -1,6 +1,6 @@
 # Code examples from my studies in TensorFlow
 
-This examples are based in this [book.](https://www.packtpub.com/free-ebooks/reading-list/data/9781838823412)
+These examples are based in this [book.](https://www.packtpub.com/free-ebooks/reading-list/data/9781838823412)
 
 ### Linear Regression:
 
