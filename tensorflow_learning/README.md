@@ -12,6 +12,11 @@ These examples are based in this [book.](https://www.packtpub.com/free-ebooks/re
 
 * [Recognizing handwritten digits](https://github.com/LuizFelipeLemon/machine_learning/blob/master/tensorflow_learning/ANN.ipynb)
 
+### Convolutional Neural Networks (CNN)
+
+* [LeNet recognizing handwritten digits](https://github.com/LuizFelipeLemon/machine_learning/blob/master/tensorflow_learning/CNN01.ipynb)
+* [Recognizing CIFAR-10 images with deep learning](https://github.com/LuizFelipeLemon/machine_learning/blob/master/tensorflow_learning/CNN02.ipynb)
+
 ### Recurrent Neural Networks (RNNs)
 
 * [Sentiment analysis](https://github.com/LuizFelipeLemon/machine_learning/blob/master/tensorflow_learning/sentiment_analysis.ipynb)
